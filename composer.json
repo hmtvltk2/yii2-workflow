@@ -2,7 +2,10 @@
     "name": "hmtvltk2/workflow",
     "description": "Yii2 workflow",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension"],
+    "keywords": [
+        "yii2",
+        "extension"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -17,5 +20,13 @@
         "psr-4": {
             "contrib\\workflow\\": ""
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php yii migrate --migrationPath=@hmtvltk2/workflow/migrations"
+        ],
+        "post-update-cmd": [
+            "php yii migrate --migrationPath=@hmtvltk2/workflow/migrations"
+        ]
     }
 }
