@@ -1,0 +1,21 @@
+{
+    "name": "hmtvltk2/workflow",
+    "description": "Yii2 workflow",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TriHM",
+            "email": "hmtvltk2@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "contrib\\workflow\\": ""
+        }
+    }
+}
